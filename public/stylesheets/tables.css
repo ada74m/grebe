@@ -1,0 +1,25 @@
+table { 
+	border-top: solid 1px #93C3CD; border-spacing: 0;
+	border-right: solid 1px #93C3CD; border-spacing: 0;
+	border-bottom: solid 1px #93C3CD; border-spacing: 0;
+}
+table th { 
+	text-align: left; 
+	background: #C9E1E6; 
+	padding: 4px 8px; 
+	border-left: solid 1px #93C3CD;
+	color:#333;
+}
+table td { 
+	text-align: left; 
+	padding: 4px 8px; 
+	background-color: #fff; 
+	border-left: solid 1px #C9E1E6; 
+}
+
+table tr.over td { 
+	background-color:#E6E999; 
+}
+
+table.rows-clickable td { cursor: pointer; }
+

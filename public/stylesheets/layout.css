@@ -1,0 +1,131 @@
+body, html { 
+	margin:0; 
+	font-family: 'Gill Sans', Arial, sans-serif;
+	font-size:11pt;
+}
+
+
+body { 
+	background: #93C3CD url(/stylesheets/jquery-themes/hot-sneaks/images/ui-bg_dots-small_35_35414f_2x2.png) repeat 50% 50%;
+}
+
+a:link, a:visited { color: #DB4865; text-decoration:none; }
+a:hover { color: #ccd232;}
+
+div#wrapper { 
+}
+
+div#head {  
+	margin: 0 12px 0 1px; 
+	background-color:#eee; 
+	border-top-right-radius: 8px;
+	-moz-border-radius-topright: 8px; 
+	padding:8px;
+	height:42px;
+	float:right;
+}
+
+div#app-title { 
+	text-align: right;
+	font-size: 8pt; 
+	color: #999; 
+	margin-bottom: 4px; 
+}
+
+div#session { 
+	clear:right;
+	border:solid 1px #999;
+	background: #93C3CD url(/stylesheets/jquery-themes/hot-sneaks/images/ui-bg_diagonals-small_50_93c3cd_40x40.png) repeat 50% 50%;
+
+	padding:2px 4px; 
+	float:right; 
+	text-align:right; 
+	-moz-border-radius: 4px; 
+	border-radius: 4px;
+}
+
+div#session a {
+	padding:1px 4px 1px 4px;
+	display:inline-block;
+}
+
+
+div#top-links { 
+	border:solid 1px #999;
+	background-color: #ddd;
+	padding:2px; 
+	float:right; 
+	text-align:right; 
+	-moz-border-radius: 4px; 
+	border-radius: 4px;
+	margin-right:8px;
+}
+
+div#top-links a { 
+	display:inline-block;
+	padding:1px 4px 1px 4px;
+}
+
+div#breadcrumbs { 
+
+	margin: 12px 12px 0 12px; 
+	background-color:#fff; 
+	border-top-left-radius: 8px;
+	-moz-border-radius-topleft: 8px; 
+	border-top-right-radius: 8px;
+	-moz-border-radius-topright: 8px; 
+	padding:8px;
+	color: #aaf; 
+	font-size: 1.2em; 
+	font-weight:bold; 
+}
+
+div#breadcrumbs a { 
+	color:#333;
+	text-decoration:none;
+	padding:8px; 
+	display:inline-block; 
+	height:24px; 
+	-moz-border-radius: 4px; 
+	border-radius: 4px;
+	background: #93C3CD url(/stylesheets/jquery-themes/hot-sneaks/images/ui-bg_diagonals-small_50_93c3cd_40x40.png) repeat 50% 50%;
+	border: 1px solid #93C3CD;
+
+	
+}
+div#breadcrumbs div.page-title { 
+	display:inline-block; 
+	height:24px; 
+	padding:8px; 
+	-moz-border-radius: 4px; 
+	border-radius: 4px;
+	background: #DB4865 url(/stylesheets/jquery-themes/hot-sneaks/images/ui-bg_diagonals-small_40_db4865_40x40.png) repeat 50% 50%;
+	border: 1px solid #FF6B7F;
+	color: white;
+}
+
+div#breadcrumbs a:hover { 
+	background: #ccd232 url(/stylesheets/jquery-themes/hot-sneaks/images/ui-bg_diagonals-small_75_ccd232_40x40.png) 50% 50% repeat;
+	border: 1px solid #ccc;
+}
+
+div#flash {
+	margin: 1px 12px 0 12px; 
+	background-color:#ffc; 
+	padding:8px;
+	text-align: center;
+	font-weight:bold;
+	
+}
+
+div#body {
+
+	margin: 1px 12px 0 12px; 
+	background-color:#fff; 
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	-moz-border-radius-bottomleft: 8px; 
+	-moz-border-radius-bottomright: 8px; 
+	padding:8px;
+	
+}

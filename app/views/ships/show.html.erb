@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @ship.name %>
+</p>
+
+<p>
+  <b>Dwt:</b>
+  <%= @ship.dwt %>
+</p>
+
+<p>
+  <b>Built year:</b>
+  <%= @ship.built_year %>
+</p>
+
+
+<%= link_to 'Edit', edit_ship_path(@ship) %> |
+<%= link_to 'Back', ships_path %>

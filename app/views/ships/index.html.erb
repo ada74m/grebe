@@ -1,0 +1,27 @@
+<% content_for :title do %>Results<% end %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Dwt</th>
+    <th>Built year</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ships.each do |ship| %>
+  <tr>
+    <td><%= ship.name %></td>
+    <td><%= ship.dwt %></td>
+    <td><%= ship.built_year %></td>
+    <td><%= link_to 'Show', ship %></td>
+    <td><%= link_to 'Edit', edit_ship_path(ship) %></td>
+    <td><%= link_to 'Destroy', ship, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ship', new_ship_path %>
