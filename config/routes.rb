@@ -1,9 +1,9 @@
 Grebe::Application.routes.draw do
+  resources :ships
+
   resources :users
   resources :sessions, :path_names => { :new => "sign_in" }
   
-  resources :ships
-
   root :to => "ships#index"
 
   # The priority is based upon order of creation:
