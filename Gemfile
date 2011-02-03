@@ -7,6 +7,25 @@ gem 'rails', '3.0.3'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
+
+
+group :test, :development do
+    gem 'rspec-rails', '>= 2.0.0.beta.22'
+end
+
+
+group :cucumber do
+    gem 'capybara'
+    gem 'database_cleaner'
+    gem 'cucumber-rails'
+    gem 'cucumber'
+    gem 'spork'
+    gem 'launchy'
+end
+
+
+
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
