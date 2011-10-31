@@ -7,13 +7,11 @@ class Criterion < ActiveRecord::Base
   end
 
   def negative_intrinisically_or_by_toggle?
-    negative? || (!negative? && @toggled)
+    if @toggled
+      !negative?
+    else
+      negative?
+    end
   end
 
-
 end
-
-
-
-
-

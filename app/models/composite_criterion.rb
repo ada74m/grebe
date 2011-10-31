@@ -14,7 +14,7 @@ class CompositeCriterion < Criterion
     child_descriptions = (children.map { |c| c.description }).join " #{connector} "
 
     negator = negative_intrinisically_or_by_toggle? ? "not " : ""
-    need_brackets = negative? || children.length > 1
+    need_brackets = negative_intrinisically_or_by_toggle? || children.length > 1
 
     (need_brackets) ?
       "#{negator}(#{child_descriptions})" :
