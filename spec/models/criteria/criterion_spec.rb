@@ -59,6 +59,9 @@ describe "Criterion hierarchy with negativity in composite nodes" do
 
   it "should push down the negativity into the leaves" do
     @root.push_down_negativity
+
+    @root.description.should == "oh I don't know'"
+
   end
 
 end

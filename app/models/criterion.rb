@@ -6,6 +6,10 @@ class Criterion < ActiveRecord::Base
      @toggled = !@toggled
   end
 
+  def push_down_negativity
+
+  end
+
   def negative_intrinisically_or_by_toggle?
     if @toggled
       !negative?
