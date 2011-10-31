@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082a8d4f-ccf8-4e7c-aed9-910964dcc351" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/criteria/or_spec.rb" afterPath="$PROJECT_DIR$/spec/models/criteria/or_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" afterPath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
     </list>
     <ignored path="grebe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +39,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="or_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="or_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/criteria/or_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="84" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.6812081">
+            <state line="60" column="83" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -56,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="criterion_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="criterion_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="67" selection-start="974" selection-end="974" vertical-scroll-proportion="0.0">
+            <state line="60" column="159" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.787472">
               <folding />
             </state>
           </provider>
@@ -113,7 +114,6 @@
         <option value="$PROJECT_DIR$/spec/models/criterion_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/equals_spec.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/criteria/equals_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/or.rb" />
         <option value="$PROJECT_DIR$/app/models/and.rb" />
@@ -122,6 +122,7 @@
         <option value="$PROJECT_DIR$/app/models/criterion.rb" />
         <option value="$PROJECT_DIR$/spec/models/criteria/and_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/criteria/or_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
       </list>
     </option>
   </component>
@@ -553,7 +554,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3011509" sideWeight="0.3258547" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3011509" sideWeight="0.67094016" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21867007" sideWeight="0.67094016" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -644,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="929" selection-end="929" vertical-scroll-proportion="0.35611907">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/criteria/equals_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="0" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
@@ -679,23 +673,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="67" selection-start="974" selection-end="974" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/or.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="27" selection-start="27" selection-end="27" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/composite_criterion.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="46" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -716,7 +696,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/criteria/or_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="84" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.6812081">
+        <state line="60" column="83" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/composite_criterion.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="46" selection-start="406" selection-end="406" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="15" selection-start="931" selection-end="931" vertical-scroll-proportion="0.35611907">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="159" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.787472">
           <folding />
         </state>
       </provider>
