@@ -1,7 +1,0 @@
-<% content_for :title do %>User<% end %>
-
-Name: <%= @user.name %><br />
-Created: <%= @user.created_at.strftime("%B %d, %Y at %l:%M %p") %><br />
-Updated: <%= @user.updated_at.strftime("%B %d, %Y at %l:%M %p") %><br />
-<br />
-Currently logged in on <%= @user.sessions.size %> computer(s).

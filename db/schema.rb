@@ -10,29 +10,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110203181606) do
+ActiveRecord::Schema.define(:version => 20110921182806) do
 
-  create_table "sessions", :force => true do |t|
-    t.integer  "user_id"
-    t.string   "ip_address"
-    t.string   "path"
+  create_table "criteria", :force => true do |t|
+    t.string   "type",                          :null => false
+    t.integer  "parent_id"
+    t.boolean  "negative",   :default => false, :null => false
+    t.integer  "integer_a"
+    t.integer  "integer_b"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "ships", :force => true do |t|
-    t.string   "name"
     t.integer  "dwt"
     t.integer  "built_year"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "users", :force => true do |t|
-    t.string   "name"
-    t.string   "salt"
-    t.string   "encrypted_password"
-    t.integer  "requests"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
