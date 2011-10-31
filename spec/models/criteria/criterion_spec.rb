@@ -10,7 +10,6 @@ describe Criterion do
   end
 end
 
-
 describe "Criterion in a hierarchy" do
 
   before(:each) do
@@ -36,5 +35,8 @@ describe "Criterion in a hierarchy" do
   it "should describe itself" do
     @root.description.should == "((ship.built_year equals 1974 or ship.built_year equals 1981) and ship.dwt equals 1000000)"
   end
+
+
+
 
 end

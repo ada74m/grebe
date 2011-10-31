@@ -11,11 +11,12 @@ class CompositeCriterion < Criterion
     connector = " #{self.class.name.downcase} "
     child_descriptions = (children.map { |c| c.description }).join connector
 
-    if children.length > 1
-      "(#{child_descriptions})"
-    else
-      child_descriptions
-    end
+    negator = negative? ? "not " : ""
+    need_brackets = negative? || children.length > 1
+
+    (need_brackets) ?
+      "#{negator}(#{child_descriptions})" :
+      "#{negator}#{child_descriptions}"
 
   end
 
@@ -32,7 +33,11 @@ class Equals < Criterion
   validates_presence_of :model, :property
 
   def description
-    "#{model}.#{property} equals #{integer_a}"
+    if negative?
+      "#{model}.#{property} does not equal #{integer_a}"
+    else
+      "#{model}.#{property} equals #{integer_a}"
+    end
   end
 
 end
