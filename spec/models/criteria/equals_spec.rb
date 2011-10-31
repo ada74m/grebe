@@ -31,7 +31,6 @@ describe Equals do
     equals.description.should == "ship.dwt equals 30000"
 
     equals.negative = true
-
     equals.description.should == "ship.dwt does not equal 30000"
 
   end

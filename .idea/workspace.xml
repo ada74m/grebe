@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082a8d4f-ccf8-4e7c-aed9-910964dcc351" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/and.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/composite_criterion.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/equals.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/or.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/criterion.rb" afterPath="$PROJECT_DIR$/app/models/criterion.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" afterPath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/criteria/equals_spec.rb" afterPath="$PROJECT_DIR$/spec/models/criteria/equals_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/criteria/or_spec.rb" afterPath="$PROJECT_DIR$/spec/models/criteria/or_spec.rb" />
     </list>
@@ -33,46 +36,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="equals_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/criteria/equals_spec.rb">
+      <file leaf-file-name="composite_criterion.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/composite_criterion.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="4" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
+            <state line="27" column="52" selection-start="600" selection-end="600" vertical-scroll-proportion="0.5656009">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="and_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/criteria/and_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="90" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="or_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/criteria/or_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="37" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="criterion_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="974" selection-end="974" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="criterion.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="criterion.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/criterion.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="38" selection-start="591" selection-end="591" vertical-scroll-proportion="0.35060638">
+            <state line="8" column="42" selection-start="151" selection-end="187" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="equals.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/equals.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="2" selection-start="68" selection-end="70" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="or.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/or.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="and.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/and.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,10 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20110921175143_add_some_function.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20110921175143_add_function_criterion_matches_ship.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20110921182806_create_function_queries_matching_ship.rb" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/config/initializers/inflections.rb" />
@@ -107,7 +106,11 @@
         <option value="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/criteria/equals_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/criteria/or_spec.rb" />
+        <option value="$PROJECT_DIR$/app/models/or.rb" />
+        <option value="$PROJECT_DIR$/app/models/and.rb" />
+        <option value="$PROJECT_DIR$/app/models/equals.rb" />
         <option value="$PROJECT_DIR$/app/models/criterion.rb" />
+        <option value="$PROJECT_DIR$/app/models/composite_criterion.rb" />
       </list>
     </option>
   </component>
@@ -206,6 +209,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="criteria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grebe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grebe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grebe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grebe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -563,30 +598,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20110921175143_add_function_criterion_matches_ship.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="438" selection-end="528" vertical-scroll-proportion="0.41404358" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="-0.008894537" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/inflections.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="60" selection-end="60" vertical-scroll-proportion="0.031719532">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="0.1903172">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20110820185201_create_criteria.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="24" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
@@ -604,13 +615,6 @@
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p330/gems/activerecord-3.0.3/lib/active_record/errors.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="142" column="2" selection-start="5301" selection-end="5301" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/ship.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -643,6 +647,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/criteria/equals_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/criteria/or_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="54" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/ship.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="0" selection-start="974" selection-end="974" vertical-scroll-proportion="0.0">
@@ -650,23 +675,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/criteria/equals_spec.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/and.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="4" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/criteria/or_spec.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/or.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="37" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/equals.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="2" selection-start="68" selection-end="70" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/criterion.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="38" selection-start="591" selection-end="591" vertical-scroll-proportion="0.35060638">
+        <state line="8" column="42" selection-start="151" selection-end="187" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/composite_criterion.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="52" selection-start="600" selection-end="600" vertical-scroll-proportion="0.5656009">
           <folding />
         </state>
       </provider>
