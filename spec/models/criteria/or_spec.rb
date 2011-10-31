@@ -37,8 +37,10 @@ describe "Or criterion" do
     criterion.description.should == '(ship.dwt equals 100 or ship.dwt equals 200)'
 
     criterion.toggle_negativity
-
     criterion.description.should == 'not (ship.dwt does not equal 100 and ship.dwt does not equal 200)'
+
+    criterion.toggle_negativity
+    criterion.description.should == '(ship.dwt equals 100 or ship.dwt equals 200)'
 
   end
 
