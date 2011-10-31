@@ -17,7 +17,7 @@ describe "Criterion in a hierarchy" do
 
     @root.children << (@or = Or.new)
     @or.children << (@built1974 = Equals.new :model => :ship, :property => :built_year, :integer_a => 1974)
-    @or.children << (@built1981 = Equals.new :model => :ship, :property => :built_year, :integer_a => 1981)
+    @or.children << (@built_1981 = Equals.new :model => :ship, :property => :built_year, :integer_a => 1981)
 
     @root.children << (@dwtOneMill = Equals.new :model => :ship, :property => :dwt, :integer_a => 1000000 )
 
@@ -45,8 +45,8 @@ describe "Criterion hierarchy with negativity in composite nodes" do
 
     @nand = And.new :negative => true
     @nand.children << (@or = Or.new)
-    @or.children << (@built1981 = Equals.new :model => :ship, :property => :built_year, :integer_a => 1981)
-    @or.children << (@built1974 = Equals.new :model => :ship, :property => :built_year, :integer_a => 1974)
+    @or.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1981)
+    @or.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1974)
 
     @nand.children << (@nor = Or.new :negative => true)
     @nor.children << (Equals.new  :model => :ship, :property => :dwt, :integer_a => 1000000)

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082a8d4f-ccf8-4e7c-aed9-910964dcc351" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" afterPath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
     </list>
     <ignored path="grebe.iws" />
@@ -60,7 +59,7 @@
       <file leaf-file-name="criterion_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="159" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.787472">
+            <state line="60" column="22" selection-start="1670" selection-end="1670" vertical-scroll-proportion="0.787472">
               <folding />
             </state>
           </provider>
@@ -717,7 +716,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="159" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.787472">
+        <state line="60" column="22" selection-start="1670" selection-end="1670" vertical-scroll-proportion="0.787472">
           <folding />
         </state>
       </provider>
