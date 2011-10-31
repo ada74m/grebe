@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082a8d4f-ccf8-4e7c-aed9-910964dcc351" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/composite_criterion.rb" afterPath="$PROJECT_DIR$/app/models/composite_criterion.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/criterion.rb" afterPath="$PROJECT_DIR$/app/models/criterion.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/criteria/and_spec.rb" afterPath="$PROJECT_DIR$/spec/models/criteria/and_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/criteria/or_spec.rb" afterPath="$PROJECT_DIR$/spec/models/criteria/or_spec.rb" />
     </list>
     <ignored path="grebe.iws" />
@@ -42,19 +38,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="or_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="or_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/models/criteria/or_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.0">
+            <state line="46" column="84" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.6812081">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="and_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="and_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/criteria/and_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="4" selection-start="1712" selection-end="1712" vertical-scroll-proportion="0.8724832">
+            <state line="36" column="84" selection-start="1314" selection-end="1327" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,10 +118,10 @@
         <option value="$PROJECT_DIR$/app/models/or.rb" />
         <option value="$PROJECT_DIR$/app/models/and.rb" />
         <option value="$PROJECT_DIR$/app/models/equals.rb" />
-        <option value="$PROJECT_DIR$/spec/models/criteria/or_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/composite_criterion.rb" />
         <option value="$PROJECT_DIR$/app/models/criterion.rb" />
         <option value="$PROJECT_DIR$/spec/models/criteria/and_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/models/criteria/or_spec.rb" />
       </list>
     </option>
   </component>
@@ -711,16 +707,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/criteria/or_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/models/criteria/and_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1407" selection-end="1407" vertical-scroll-proportion="0.0">
+        <state line="36" column="84" selection-start="1314" selection-end="1327" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/criteria/and_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/models/criteria/or_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="4" selection-start="1712" selection-end="1712" vertical-scroll-proportion="0.8724832">
+        <state line="46" column="84" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.6812081">
           <folding />
         </state>
       </provider>
