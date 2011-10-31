@@ -22,4 +22,15 @@ describe Equals do
   end
 
 
+  it "should describe itself" do
+    Equals.new(
+      :model => 'ship',
+      :property => 'dwt',
+      :integer_a => 30000
+  ).description.should == "ship.dwt equals 30000"
+
+  end
+
 end
+
+
