@@ -4,7 +4,6 @@
     <list default="true" id="082a8d4f-ccf8-4e7c-aed9-910964dcc351" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/composite_criterion.rb" afterPath="$PROJECT_DIR$/app/models/composite_criterion.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" afterPath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
     </list>
     <ignored path="grebe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,7 +60,7 @@
       <file leaf-file-name="composite_criterion.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/composite_criterion.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="27" selection-start="834" selection-end="834" vertical-scroll-proportion="0.22203673">
+            <state line="39" column="22" selection-start="911" selection-end="911" vertical-scroll-proportion="0.82470787">
               <folding />
             </state>
           </provider>
@@ -871,7 +870,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/composite_criterion.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="27" selection-start="834" selection-end="834" vertical-scroll-proportion="0.22203673">
+        <state line="39" column="22" selection-start="911" selection-end="911" vertical-scroll-proportion="0.82470787">
           <folding />
         </state>
       </provider>

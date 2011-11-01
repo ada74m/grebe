@@ -37,7 +37,7 @@ class CompositeCriterion < Criterion
 
   def push_down_negativity
     translate_to_or_from_negative_form if (negative?)
-    composite_children().each {|child| child.push_down_negativity }
+    composite_children.each {|child| child.push_down_negativity }
   end
 
   private
@@ -54,7 +54,5 @@ class CompositeCriterion < Criterion
     children.
         select { |child| child.kind_of? CompositeCriterion }
   end
-
-
 
 end
