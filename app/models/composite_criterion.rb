@@ -4,17 +4,41 @@ class CompositeCriterion < Criterion
            :before_add => [Proc.new { |a, b| b.parent = a }]
 
 
-  def toggle_negativity
-    super
-    children.each { |child| child.toggle_negativity }
+
+  def self.or(options = {})
+
+    CompositeCriterion.new options.merge :operator => 'or'
   end
 
 
-  def description
-    child_descriptions = (children.map { |c| c.description }).join " #{connector} "
+  def self.and(options = {})
+    CompositeCriterion.new options.merge :operator => 'and'
+  end
 
-    negator = negative_intrinisically_or_by_toggle? ? "not " : ""
-    need_brackets = negative_intrinisically_or_by_toggle? || children.length > 1
+  def translate_to_or_from_negative_form
+
+    self.negative = !negative?
+
+    if (operator == 'and')
+      self.operator = 'or'
+    else
+      self.operator = 'and'
+    end
+
+    children.each do |child|
+      child.negative = !child.negative?
+    end
+
+
+  end
+
+
+
+  def description
+    child_descriptions = (children.map { |c| c.description }).join " #{operator} "
+
+    negator = negative? ? "not " : ""
+    need_brackets = negative? || children.length > 1
 
     (need_brackets) ?
       "#{negator}(#{child_descriptions})" :

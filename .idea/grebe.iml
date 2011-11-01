@@ -44,9 +44,9 @@
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.16, RVM: ruby-1.9.2-p136 [grebe]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json_pure (v1.5.1, RVM: ruby-1.9.2-p136 [grebe]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.1, RVM: ruby-1.9.2-p136 [grebe]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="i18n (v0.5.0, RVM: ruby-1.9.2-p136 [grebe]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rspec (v2.3.0, RVM: ruby-1.9.2-p136 [grebe]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v3.0.3, RVM: ruby-1.9.2-p136 [grebe]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec (v2.3.0, RVM: ruby-1.9.2-p136 [grebe]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="i18n (v0.5.0, RVM: ruby-1.9.2-p136 [grebe]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cucumber-rails (v0.3.2, RVM: ruby-1.9.2-p136 [grebe]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="abstract (v1.0.0, RVM: ruby-1.9.2-p136 [grebe]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="acts_as_tree_rails3 (v0.1.0, RVM: ruby-1.9.2-p136 [grebe]) [gem]" level="application" />

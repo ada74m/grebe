@@ -29,10 +29,12 @@ SET default_with_oids = false;
 CREATE TABLE criteria (
     id integer NOT NULL,
     type character varying(255) NOT NULL,
+    operator character varying(255),
     model character varying(255),
     property character varying(255),
     parent_id integer,
     negative boolean DEFAULT false NOT NULL,
+    toggled boolean DEFAULT false NOT NULL,
     integer_a integer,
     integer_b integer,
     created_at timestamp without time zone,
