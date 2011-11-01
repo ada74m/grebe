@@ -83,18 +83,18 @@ describe Criterion do
       @root.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1974)
 
       class CompositeCriterion
-        def spy=(value)
-          @spy = value
+        def normal_directly_after_save=(value)
+          @normal_directly_after_save = value
         end
 
-        def spy
-          @spy
+        def normal_directly_after_save
+          @normal_directly_after_save
         end
 
         alias :after_save_orig :after_save
 
         def after_save
-          self.spy = self.normal?
+          self.normal_directly_after_save = self.normal?
           after_save_orig
         end
       end
@@ -108,57 +108,24 @@ describe Criterion do
       end
     end
 
-    it "should be normalised before saving but not direcly after" do
+    it "should be normalised before saving but not directly after" do
       @root.should_not be_normal
-      @root.spy.should be_nil
+      @root.normal_directly_after_save.should be_nil
+
       @root.save
-      @root.spy.should be_true
+
+      @root.normal_directly_after_save.should be_true
       @root.should_not be_normal
 
     end
   end
 
-  #describe "behaviour during load" do
-  #
-  #  before(:each) do
-  #
-  #    @root = CompositeCriterion.and :negative => true
-  #    @root.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1981)
-  #    @root.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1974)
-  #
-  #    @root.should_not be_normal
-  #
-  #    @root.save!
-  #
-  #    class CompositeCriterion
-  #      def self.spy(value)
-  #        @spy_value = value
-  #      end
-  #      def self.spy?
-  #        @spy_value
-  #      end
-  #
-  #      def before_load
-  #        #puts "######## after_save setting spy variable on #{self} to #{self.normal?}"
-  #        self.class.spy(self.normal?)
-  #      end
-  #
-  #    end
-  #  end
-  #
-  #  after(:each) do
-  #    class CompositeCriterion
-  #      undef after_save
-  #      undef spy
-  #      undef spy?
-  #    end
-  #  end
-  #
-  #  it "should be normalised when it leaves the database but restored after load" do
-  #    CompositeCriterion.spy?.should be_nil
-  #    @root.save
-  #    CompositeCriterion.spy?.should be_true
-  #  end
-  #end
+  describe "behaviour during load" do
+
+    it "should be normal as it leaves database but not normal after being fully loaded" do
+
+    end
+
+  end
 
 end
