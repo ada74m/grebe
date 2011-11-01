@@ -3,6 +3,16 @@ class CompositeCriterion < Criterion
            :class_name => 'Criterion',
            :before_add => [Proc.new { |a, b| b.parent = a }]
 
+
+  def before_save
+    normalise
+  end
+
+  def after_save
+    restore
+  end
+
+
   def self.or(options = {})
     CompositeCriterion.new options.merge :operator => 'or'
   end
