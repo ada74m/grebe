@@ -37,9 +37,10 @@ describe Criterion do
 
   end
 
-  describe "translation to positive form and back to original" do
+  describe "normalisation (i.e. pushing down negativity to leafs)" do
 
     before(:each) do
+
       @root = CompositeCriterion.and :negative => true
       @root.children << (@or = CompositeCriterion.or)
       @or.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1981)
@@ -52,16 +53,30 @@ describe Criterion do
       @root.description.should == "not ((ship.built_year equals 1981 or ship.built_year does not equal 1974) and not (ship.dwt equals 1000000 or ship.dwt equals 2000000))"
     end
 
+    it "should know when it is not in normal form" do
+      @root.should_not be_normal
+    end
+
+    it "should know when it is in normal form" do
+      @root.normalise
+      @root.should be_normal
+    end
+
     it "should push down the negativity into the leaves" do
-      @root.push_down_negativity
+      @root.normalise
       @root.description.should == "((ship.built_year does not equal 1981 and ship.built_year equals 1974) or (ship.dwt equals 1000000 or ship.dwt equals 2000000))"
     end
 
     it "should restore negativity" do
-      @root.push_down_negativity
-      @root.restore_negativity
+      @root.normalise
+      @root.restore
       @root.description.should == "not ((ship.built_year equals 1981 or ship.built_year does not equal 1974) and not (ship.dwt equals 1000000 or ship.dwt equals 2000000))"
     end
+
+  end
+
+  describe "persistence" do
+
 
   end
 
