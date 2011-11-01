@@ -57,14 +57,14 @@ describe Criterion do
       @root.should_not be_normal
     end
 
-    it "should know when it is in normal form" do
-      @root.normalise
-      @root.should be_normal
-    end
-
     it "should push down the negativity into the leaves" do
       @root.normalise
       @root.description.should == "((ship.built_year does not equal 1981 and ship.built_year equals 1974) or (ship.dwt equals 1000000 or ship.dwt equals 2000000))"
+    end
+
+    it "should know when it is in normal form" do
+      @root.normalise
+      @root.should be_normal
     end
 
     it "should restore negativity" do
