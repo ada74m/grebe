@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082a8d4f-ccf8-4e7c-aed9-910964dcc351" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/and.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/or.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/grebe.iml" afterPath="$PROJECT_DIR$/.idea/grebe.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/composite_criterion.rb" afterPath="$PROJECT_DIR$/app/models/composite_criterion.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/criterion.rb" afterPath="$PROJECT_DIR$/app/models/criterion.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/equals.rb" afterPath="$PROJECT_DIR$/app/models/equals.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development_structure.sql" afterPath="$PROJECT_DIR$/db/development_structure.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20110820185201_create_criteria.rb" afterPath="$PROJECT_DIR$/db/migrate/20110820185201_create_criteria.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/criteria/and_spec.rb" afterPath="$PROJECT_DIR$/spec/models/criteria/and_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" afterPath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/criteria/or_spec.rb" afterPath="$PROJECT_DIR$/spec/models/criteria/or_spec.rb" />
     </list>
     <ignored path="grebe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,10 +67,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composite_criterion.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="composite_criterion.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/composite_criterion.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="33" selection-start="556" selection-end="556" vertical-scroll-proportion="0.6494157">
+            <state line="47" column="0" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="criterion.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/criterion.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.12687813">
               <folding />
             </state>
           </provider>
@@ -109,12 +109,12 @@
         <option value="$PROJECT_DIR$/app/models/or.rb" />
         <option value="$PROJECT_DIR$/app/models/and.rb" />
         <option value="$PROJECT_DIR$/app/models/equals.rb" />
-        <option value="$PROJECT_DIR$/app/models/criterion.rb" />
         <option value="$PROJECT_DIR$/spec/models/criteria/or_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110820185201_create_criteria.rb" />
         <option value="$PROJECT_DIR$/spec/models/criteria/and_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/composite_criterion.rb" />
+        <option value="$PROJECT_DIR$/app/models/criterion.rb" />
       </list>
     </option>
   </component>
@@ -843,13 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/criterion.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0951586">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/criteria/or_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="36" selection-start="1619" selection-end="1619" vertical-scroll-proportion="0.0">
@@ -880,7 +873,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/composite_criterion.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="33" selection-start="556" selection-end="556" vertical-scroll-proportion="0.6494157">
+        <state line="47" column="0" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/criterion.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.12687813">
           <folding />
         </state>
       </provider>

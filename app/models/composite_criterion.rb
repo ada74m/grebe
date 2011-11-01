@@ -17,7 +17,7 @@ class CompositeCriterion < Criterion
 
   def translate_to_or_from_negative_form
 
-    self.negative = !negative?
+    self.toggle_negativity
 
     if (operator == 'and')
       self.operator = 'or'
@@ -26,9 +26,8 @@ class CompositeCriterion < Criterion
     end
 
     children.each do |child|
-      child.negative = !child.negative?
+      child.toggle_negativity
     end
-
 
   end
 
