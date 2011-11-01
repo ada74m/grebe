@@ -35,6 +35,11 @@ class CompositeCriterion < Criterion
 
   end
 
+  def push_down_negativity
+    translate_to_or_from_negative_form if (negative?)
+    composite_children().each {|child| child.push_down_negativity }
+  end
+
   private
 
   def toggle_operator
@@ -43,6 +48,11 @@ class CompositeCriterion < Criterion
     else
       self.operator = 'and'
     end
+  end
+
+  def composite_children
+    children.
+        select { |child| child.kind_of? CompositeCriterion }
   end
 
 

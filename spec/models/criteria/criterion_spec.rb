@@ -56,9 +56,9 @@ describe "Criterion hierarchy with negativity in composite nodes" do
 
   end
 
-  #it "should push down the negativity into the leaves" do
-  #  @root.push_down_negativity
-  #  @root.description.should == "((ship.built_year does not equal 1981 and ship.built_year equals 1974) or (ship.dwt equals 1000000 or ship.dwt equals 2000000))"
-  #end
+  it "should push down the negativity into the leaves" do
+    @root.push_down_negativity
+    @root.description.should == "((ship.built_year does not equal 1981 and ship.built_year equals 1974) or (ship.dwt equals 1000000 or ship.dwt equals 2000000))"
+  end
 
 end

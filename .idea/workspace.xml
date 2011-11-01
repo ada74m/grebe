@@ -4,6 +4,7 @@
     <list default="true" id="082a8d4f-ccf8-4e7c-aed9-910964dcc351" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/composite_criterion.rb" afterPath="$PROJECT_DIR$/app/models/composite_criterion.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" afterPath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
     </list>
     <ignored path="grebe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +34,7 @@
       <file leaf-file-name="and_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/criteria/and_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="40" selection-start="1213" selection-end="1213" vertical-scroll-proportion="-6.5454545">
+            <state line="37" column="53" selection-start="1523" selection-end="1523" vertical-scroll-proportion="-12.781818">
               <folding />
             </state>
           </provider>
@@ -51,16 +52,7 @@
       <file leaf-file-name="criterion_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="34" selection-start="271" selection-end="271" vertical-scroll-proportion="-2.0727272">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20110820185201_create_criteria.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20110820185201_create_criteria.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="39" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
+            <state line="59" column="12" selection-start="1922" selection-end="1922" vertical-scroll-proportion="-6.2">
               <folding />
             </state>
           </provider>
@@ -69,7 +61,7 @@
       <file leaf-file-name="composite_criterion.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/composite_criterion.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="31" selection-start="807" selection-end="807" vertical-scroll-proportion="0.46076795">
+            <state line="37" column="27" selection-start="834" selection-end="834" vertical-scroll-proportion="0.22203673">
               <folding />
             </state>
           </provider>
@@ -109,10 +101,10 @@
         <option value="$PROJECT_DIR$/app/models/and.rb" />
         <option value="$PROJECT_DIR$/app/models/equals.rb" />
         <option value="$PROJECT_DIR$/spec/models/criteria/or_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110820185201_create_criteria.rb" />
         <option value="$PROJECT_DIR$/spec/models/criteria/and_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/criterion.rb" />
+        <option value="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/composite_criterion.rb" />
       </list>
     </option>
@@ -842,6 +834,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/criterion.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20110820185201_create_criteria.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="39" selection-start="171" selection-end="171" vertical-scroll-proportion="0.12687813">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/criteria/and_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="53" selection-start="1523" selection-end="1523" vertical-scroll-proportion="-12.781818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/criteria/or_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="36" selection-start="1619" selection-end="1619" vertical-scroll-proportion="0.0">
@@ -851,35 +864,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="34" selection-start="271" selection-end="271" vertical-scroll-proportion="-2.0727272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20110820185201_create_criteria.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="39" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/criteria/and_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="40" selection-start="1213" selection-end="1213" vertical-scroll-proportion="-6.5454545">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/criterion.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+        <state line="59" column="12" selection-start="1922" selection-end="1922" vertical-scroll-proportion="-6.2">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/composite_criterion.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="31" selection-start="807" selection-end="807" vertical-scroll-proportion="0.46076795">
+        <state line="37" column="27" selection-start="834" selection-end="834" vertical-scroll-proportion="0.22203673">
           <folding />
         </state>
       </provider>
