@@ -6,7 +6,6 @@ class CompositeCriterion < Criterion
 
 
   def self.or(options = {})
-
     CompositeCriterion.new options.merge :operator => 'or'
   end
 
@@ -15,15 +14,12 @@ class CompositeCriterion < Criterion
     CompositeCriterion.new options.merge :operator => 'and'
   end
 
+
   def translate_to_or_from_negative_form
 
     self.toggle_negativity
 
-    if (operator == 'and')
-      self.operator = 'or'
-    else
-      self.operator = 'and'
-    end
+    toggle_operator()
 
     children.each do |child|
       child.toggle_negativity
@@ -43,6 +39,17 @@ class CompositeCriterion < Criterion
       "#{negator}(#{child_descriptions})" :
       "#{negator}#{child_descriptions}"
 
+  end
+
+
+  private
+
+  def toggle_operator
+    if (operator == 'and')
+      self.operator = 'or'
+    else
+      self.operator = 'and'
+    end
   end
 
 
