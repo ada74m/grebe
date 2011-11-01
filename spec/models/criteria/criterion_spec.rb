@@ -122,6 +122,38 @@ describe Criterion do
 
   describe "behaviour during load" do
 
+    before(:each) do
+      @root = CompositeCriterion.and :negative => true
+      @root.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1981)
+      @root.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1974)
+
+      class CompositeCriterion
+        def normal_directly_out_of_database=(value)
+          @normal_directly_out_of_database = value
+        end
+
+        def normal_directly_out_of_database
+          @normal_directly_out_of_database
+        end
+
+        alias :after_initialize_orig :after_initialize
+
+        def after_initialize
+          self.normal_directly_out_of_database = self.normal?
+          after_initialize_orig
+        end
+      end
+    end
+
+    after(:each) do
+      class CompositeCriterion
+        def after_initialize
+          after_initialize_orig
+        end
+      end
+    end
+
+
     it "should be normal as it leaves database but not normal after being fully loaded" do
 
     end

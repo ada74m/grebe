@@ -13,6 +13,10 @@ class CompositeCriterion < Criterion
   end
 
 
+  def after_initialize
+
+  end
+
   def self.or(options = {})
     CompositeCriterion.new options.merge :operator => 'or'
   end
