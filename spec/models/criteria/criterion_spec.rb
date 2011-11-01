@@ -153,8 +153,12 @@ describe Criterion do
       end
     end
 
-
     it "should be normal as it leaves database but not normal after being fully loaded" do
+
+      @root.normal_directly_out_of_database.should be_nil
+      @root.reload
+      @root.normal_directly_out_of_database.should be_true
+      @root.should_not be_normal
 
     end
 

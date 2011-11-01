@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082a8d4f-ccf8-4e7c-aed9-910964dcc351" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/composite_criterion.rb" afterPath="$PROJECT_DIR$/app/models/composite_criterion.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" afterPath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
     </list>
     <ignored path="grebe.iws" />
@@ -34,7 +32,7 @@
       <file leaf-file-name="criterion_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="31" selection-start="4531" selection-end="4531" vertical-scroll-proportion="0.5661502">
+            <state line="160" column="3" selection-start="4915" selection-end="4915" vertical-scroll-proportion="0.82997763">
               <folding />
             </state>
           </provider>
@@ -77,8 +75,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20110820185201_create_criteria.rb" />
         <option value="$PROJECT_DIR$/spec/models/criteria/and_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/criterion.rb" />
-        <option value="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/composite_criterion.rb" />
+        <option value="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
       </list>
     </option>
   </component>
@@ -877,7 +875,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="31" selection-start="4531" selection-end="4531" vertical-scroll-proportion="0.5661502">
+        <state line="160" column="3" selection-start="4915" selection-end="4915" vertical-scroll-proportion="0.82997763">
           <folding />
         </state>
       </provider>
