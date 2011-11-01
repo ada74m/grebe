@@ -6,7 +6,7 @@ class Criterion < ActiveRecord::Base
 
   def toggle_negativity
     self.negative = !negative?
-
+    self.toggled = !toggled?
   end
 
 end

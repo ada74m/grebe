@@ -40,6 +40,11 @@ class CompositeCriterion < Criterion
     composite_children.each {|child| child.push_down_negativity }
   end
 
+  def restore_negativity
+    translate_to_or_from_negative_form if (toggled?)
+    composite_children.each {|child| child.restore_negativity }
+  end
+
   private
 
   def toggle_operator
