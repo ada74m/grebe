@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="082a8d4f-ccf8-4e7c-aed9-910964dcc351" name="Default" comment="" />
+    <list default="true" id="082a8d4f-ccf8-4e7c-aed9-910964dcc351" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/composite_criterion.rb" afterPath="$PROJECT_DIR$/app/models/composite_criterion.rb" />
+    </list>
     <ignored path="grebe.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,7 +69,7 @@
       <file leaf-file-name="composite_criterion.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/composite_criterion.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="2" selection-start="846" selection-end="846" vertical-scroll-proportion="0.7779633">
+            <state line="36" column="31" selection-start="807" selection-end="807" vertical-scroll-proportion="0.46076795">
               <folding />
             </state>
           </provider>
@@ -876,7 +879,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/composite_criterion.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="2" selection-start="846" selection-end="846" vertical-scroll-proportion="0.7779633">
+        <state line="36" column="31" selection-start="807" selection-end="807" vertical-scroll-proportion="0.46076795">
           <folding />
         </state>
       </provider>

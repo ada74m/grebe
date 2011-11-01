@@ -17,17 +17,11 @@ class CompositeCriterion < Criterion
 
   def translate_to_or_from_negative_form
 
-    self.toggle_negativity
-
-    toggle_operator()
-
-    children.each do |child|
-      child.toggle_negativity
-    end
+    toggle_negativity
+    toggle_operator
+    children.each { |child| child.toggle_negativity }
 
   end
-
-
 
   def description
     child_descriptions = (children.map { |c| c.description }).join " #{operator} "
@@ -40,7 +34,6 @@ class CompositeCriterion < Criterion
       "#{negator}#{child_descriptions}"
 
   end
-
 
   private
 
