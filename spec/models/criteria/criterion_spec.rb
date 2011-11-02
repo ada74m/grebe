@@ -75,6 +75,15 @@ describe Criterion do
 
   end
 
+  class Spy
+    def self.record message
+      @message = message
+    end
+    def self.playback
+      @message
+    end
+  end
+
   describe "behaviour during save" do
 
     before(:each) do
@@ -83,40 +92,29 @@ describe Criterion do
       @root.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1974)
 
       class CompositeCriterion
-        def normal_directly_after_save=(value)
-          @normal_directly_after_save = value
-        end
+        alias :before_save_orig :before_save
 
-        def normal_directly_after_save
-          @normal_directly_after_save
-        end
-
-        alias :after_save_orig :after_save
-
-        def after_save
-          self.normal_directly_after_save = self.normal?
-          after_save_orig
+        def before_save
+          before_save_orig
+          Spy.record "after before_save was run, normal? was #{self.normal?}"
         end
       end
     end
 
     after(:each) do
       class CompositeCriterion
-        def after_save
-          after_save_orig
+        def before_save
+          before_save_orig
         end
       end
     end
 
-    it "should be normalised before saving but not directly after" do
+    it "should be normalised after before_save has run and denormalised again later" do
       @root.should_not be_normal
-      @root.normal_directly_after_save.should be_nil
-
+      Spy.playback.should be nil
       @root.save
-
-      @root.normal_directly_after_save.should be_true
+      Spy.playback.should == "after before_save was run, normal? was true"
       @root.should_not be_normal
-
     end
   end
 
@@ -127,19 +125,14 @@ describe Criterion do
       @root.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1981)
       @root.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1974)
 
-      class CompositeCriterion
-        def normal_directly_out_of_database=(value)
-          @normal_directly_out_of_database = value
-        end
+      @root.save!
 
-        def normal_directly_out_of_database
-          @normal_directly_out_of_database
-        end
+      class CompositeCriterion
 
         alias :after_initialize_orig :after_initialize
 
         def after_initialize
-          self.normal_directly_out_of_database = self.normal?
+          Spy.record "before after_initialise was run, normal? was #{self.normal?}"
           after_initialize_orig
         end
       end
@@ -154,12 +147,9 @@ describe Criterion do
     end
 
     it "should be normal as it leaves database but not normal after being fully loaded" do
-
-      @root.normal_directly_out_of_database.should be_nil
       @root.reload
-      @root.normal_directly_out_of_database.should be_true
+      Spy.playback.should == "before after_initialise was run, normal? was true"
       @root.should_not be_normal
-
     end
 
   end

@@ -1,6 +1,7 @@
 class CompositeCriterion < Criterion
   has_many :children,
            :class_name => 'Criterion',
+           :foreign_key => 'parent_id',
            :before_add => [Proc.new { |a, b| b.parent = a }]
 
 
@@ -12,9 +13,8 @@ class CompositeCriterion < Criterion
     restore
   end
 
-
   def after_initialize
-
+    restore
   end
 
   def self.or(options = {})
