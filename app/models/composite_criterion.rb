@@ -16,7 +16,6 @@ class CompositeCriterion < Criterion
     CompositeCriterion.new options.merge :operator => 'and'
   end
 
-
   def description
     child_descriptions = (children.map { |c| c.description }).join " #{operator} "
 
@@ -26,13 +25,11 @@ class CompositeCriterion < Criterion
     (need_brackets) ?
       "#{negator}(#{child_descriptions})" :
       "#{negator}#{child_descriptions}"
-
   end
 
   def normal?
     return false if negative?
     composite_children.all? { |child| child.normal? }
-
   end
 
   def normalise

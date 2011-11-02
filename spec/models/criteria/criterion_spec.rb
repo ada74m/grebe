@@ -2,13 +2,6 @@ require 'spec_helper'
 
 describe Criterion do
 
-  it "should be negatable" do
-
-    criterion = Equals.new
-    criterion.negative = true
-    criterion.should be_negative
-  end
-
   describe "behaviour when in a hierarchy" do
 
     before(:each) do
