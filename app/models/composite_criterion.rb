@@ -4,18 +4,9 @@ class CompositeCriterion < Criterion
            :foreign_key => 'parent_id',
            :before_add => [Proc.new { |a, b| b.parent = a }]
 
-
-  def before_save
-    normalise
-  end
-
-  def after_save
-    restore
-  end
-
-  def after_initialize
-    restore
-  end
+  before_save :on_before_save
+  after_save :on_after_save
+  after_initialize :on_after_initialize
 
   def self.or(options = {})
     CompositeCriterion.new options.merge :operator => 'or'
@@ -61,6 +52,18 @@ class CompositeCriterion < Criterion
   end
 
   private
+
+  def on_before_save
+    normalise
+  end
+
+  def on_after_save
+    restore
+  end
+
+  def on_after_initialize
+    restore
+  end
 
   def toggle_operator
     if (operator == 'and')

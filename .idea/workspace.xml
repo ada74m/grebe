@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="082a8d4f-ccf8-4e7c-aed9-910964dcc351" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/grebe.iml" afterPath="$PROJECT_DIR$/.idea/grebe.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/composite_criterion.rb" afterPath="$PROJECT_DIR$/app/models/composite_criterion.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" afterPath="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
@@ -32,19 +31,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="criterion_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="criterion_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="33" selection-start="4625" selection-end="4625" vertical-scroll-proportion="0.678511">
+            <state line="135" column="13" selection-start="4316" selection-end="4316" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composite_criterion.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="composite_criterion.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/composite_criterion.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="2" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+            <state line="60" column="0" selection-start="1380" selection-end="1380" vertical-scroll-proportion="1.8874172">
               <folding />
             </state>
           </provider>
@@ -78,8 +77,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20110820185201_create_criteria.rb" />
         <option value="$PROJECT_DIR$/spec/models/criteria/and_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/criterion.rb" />
-        <option value="$PROJECT_DIR$/app/models/composite_criterion.rb" />
         <option value="$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb" />
+        <option value="$PROJECT_DIR$/app/models/composite_criterion.rb" />
       </list>
     </option>
   </component>
@@ -745,7 +744,7 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22826087" sideWeight="0.67628205" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32371795" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-6" y="506" width="1575" height="496" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32371795" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-6" y="506" width="1575" height="496" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -859,13 +858,6 @@
         <state line="46" column="36" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/composite_criterion.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="2" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p136@grebe/gems/activerecord-3.0.3/lib/active_record/persistence.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="201" column="17" selection-start="8271" selection-end="8271" vertical-scroll-proportion="0.46192893">
@@ -875,7 +867,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/criteria/criterion_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="33" selection-start="4625" selection-end="4625" vertical-scroll-proportion="0.678511">
+        <state line="135" column="13" selection-start="4316" selection-end="4316" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/composite_criterion.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="1380" selection-end="1380" vertical-scroll-proportion="1.8874172">
           <folding />
         </state>
       </provider>

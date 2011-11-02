@@ -92,10 +92,10 @@ describe Criterion do
       @root.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1974)
 
       class CompositeCriterion
-        alias :before_save_orig :before_save
+        alias :on_before_save_orig :on_before_save
 
-        def before_save
-          before_save_orig
+        def on_before_save
+          on_before_save_orig
           Spy.record "after before_save was run, normal? was #{self.normal?}"
         end
       end
@@ -103,8 +103,8 @@ describe Criterion do
 
     after(:each) do
       class CompositeCriterion
-        def before_save
-          before_save_orig
+        def on_before_save
+          on_before_save_orig
         end
       end
     end
@@ -129,19 +129,19 @@ describe Criterion do
 
       class CompositeCriterion
 
-        alias :after_initialize_orig :after_initialize
+        alias :on_after_initialize_orig :on_after_initialize
 
-        def after_initialize
+        def on_after_initialize
           Spy.record "before after_initialise was run, normal? was #{self.normal?}"
-          after_initialize_orig
+          on_after_initialize_orig
         end
       end
     end
 
     after(:each) do
       class CompositeCriterion
-        def after_initialize
-          after_initialize_orig
+        def on_after_initialize
+          on_after_initialize_orig
         end
       end
     end
