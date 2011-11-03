@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Criterion do
 
-  describe "behaviour when in a hierarchy" do
+  describe "when in a hierarchy" do
 
     before(:each) do
       @root = CompositeCriterion.and
@@ -10,8 +10,12 @@ describe Criterion do
       @root.children << (@or = CompositeCriterion.or)
       @or.children << (@built1974 = Equals.new :model => :ship, :property => :built_year, :integer_a => 1974)
       @or.children << (@built_1981 = Equals.new :model => :ship, :property => :built_year, :integer_a => 1981)
+      @or.children << (@and = CompositeCriterion.and)
+      @and.children << (Equals.new :model => :ship, :property => :cranes, :integer_a => 2)
+      @and.children << (Equals.new :model => :ship, :property => :winches, :integer_a => 2)
 
-      @root.children << (@dwtOneMill = Equals.new :model => :ship, :property => :dwt, :integer_a => 1000000 )
+
+      @root.children << (@dwtOneMill = Equals.new :model => :ship, :property => :dwt, :integer_a => 1000000)
 
       @root.save!
     end
@@ -25,10 +29,18 @@ describe Criterion do
     end
 
     it "should describe itself" do
-      @root.description.should == "((ship.built_year equals 1974 or ship.built_year equals 1981) and ship.dwt equals 1000000)"
+      @root.description.should == "((ship.built_year equals 1974 or ship.built_year equals 1981 or (ship.cranes equals 2 and ship.winches equals 2)) and ship.dwt equals 1000000)"
+    end
+
+
+    it "should stay the same when you reload" do
+      original_description = @root.description
+      copy = Criterion.find @root.id
+      copy.description.should == original_description
     end
 
   end
+
 
   describe "normalisation (i.e. pushing down negativity to leafs)" do
 
@@ -100,18 +112,18 @@ describe Criterion do
 
       class CompositeCriterion
 
-        alias :on_after_initialize_orig :on_after_initialize
+        alias :on_after_find_orig :on_after_find
 
-        def on_after_initialize
+        def on_after_find
           Spy.inform "before after_initialise was run, normal? was #{self.normal?}"
-          on_after_initialize_orig
+          on_after_find_orig
         end
       end
     end
 
     after(:each) do
       class CompositeCriterion
-        alias :on_after_initialize :on_after_initialize_orig
+        alias :on_after_find :on_after_find_orig
 
       end
     end
@@ -148,7 +160,6 @@ describe Criterion do
     after(:all) do
 
       class CompositeCriterion
-        puts "REMOVING ON_BEFORE_SAVE"
         alias :on_before_save :on_before_save_orig
       end
 

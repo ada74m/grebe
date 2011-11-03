@@ -4,9 +4,9 @@ class CompositeCriterion < Criterion
            :foreign_key => 'parent_id',
            :before_add => [Proc.new { |a, b| b.parent = a }]
 
-  before_save :on_before_save
-  after_save :on_after_save
-  after_initialize :on_after_initialize
+  before_save :on_before_save, :if => :top_level?
+  after_save :on_after_save, :if => :top_level?
+  after_find :on_after_find, :if => :top_level?
 
   def self.or(options = {})
     CompositeCriterion.new options.merge :operator => 'or'
@@ -50,6 +50,10 @@ class CompositeCriterion < Criterion
 
   private
 
+  def top_level?
+    parent.nil?
+  end
+
   def on_before_save
     normalise
   end
@@ -58,7 +62,8 @@ class CompositeCriterion < Criterion
     restore
   end
 
-  def on_after_initialize
+  def on_after_find
+    puts "######## loaded a top level criterion: #{self.description}"
     restore
   end
 
