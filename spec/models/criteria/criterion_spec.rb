@@ -69,17 +69,67 @@ describe Criterion do
   end
 
   class Spy
-    def self.record message
-      @message = message
+    @messages = []
+
+    def self.clear
+      @messages = []
     end
-    def self.playback
-      @message
+    def self.inform message
+      @messages << message
+    end
+    def self.messages
+      @messages
     end
   end
 
-  describe "behaviour during save" do
+  describe "on loading" do
 
     before(:each) do
+
+      Spy.clear
+
+      @root = CompositeCriterion.and :negative => true
+      @root.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1981)
+      @root.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1974)
+
+      #@root.children << (nested_or = CompositeCriterion.or)
+      #nested_or.children << (Equals.new :model => :ship, :property => :dwt, :integer_a => 3000)
+      #nested_or.children << (Equals.new :model => :ship, :property => :dwt, :integer_a => 4000)
+
+      @root.save!
+
+      class CompositeCriterion
+
+        alias :on_after_initialize_orig :on_after_initialize
+
+        def on_after_initialize
+          Spy.inform "before after_initialise was run, normal? was #{self.normal?}"
+          on_after_initialize_orig
+        end
+      end
+    end
+
+    after(:each) do
+      class CompositeCriterion
+        alias :on_after_initialize :on_after_initialize_orig
+
+      end
+    end
+
+    it "should be normal as it leaves database but not normal after being fully loaded" do
+      @root.reload
+      Spy.messages.should =~ ["before after_initialise was run, normal? was true"]
+      @root.should_not be_normal
+    end
+
+  end
+
+  describe "on saving" do
+
+    before(:all) do
+
+      Spy.clear
+
       @root = CompositeCriterion.and :negative => true
       @root.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1981)
       @root.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1974)
@@ -89,62 +139,28 @@ describe Criterion do
 
         def on_before_save
           on_before_save_orig
-          Spy.record "after before_save was run, normal? was #{self.normal?}"
+          Spy.inform "after before_save was run, normal? was #{self.normal?}"
         end
       end
+
     end
 
-    after(:each) do
+    after(:all) do
+
       class CompositeCriterion
-        def on_before_save
-          on_before_save_orig
-        end
+        puts "REMOVING ON_BEFORE_SAVE"
+        alias :on_before_save :on_before_save_orig
       end
+
     end
 
     it "should be normalised after before_save has run and denormalised again later" do
       @root.should_not be_normal
-      Spy.playback.should be nil
+      Spy.messages.should =~ []
       @root.save
-      Spy.playback.should == "after before_save was run, normal? was true"
+      Spy.messages.should =~ ["after before_save was run, normal? was true"]
       @root.should_not be_normal
     end
-  end
-
-  describe "behaviour during load" do
-
-    before(:each) do
-      @root = CompositeCriterion.and :negative => true
-      @root.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1981)
-      @root.children << (Equals.new :model => :ship, :property => :built_year, :integer_a => 1974)
-
-      @root.save!
-
-      class CompositeCriterion
-
-        alias :on_after_initialize_orig :on_after_initialize
-
-        def on_after_initialize
-          Spy.record "before after_initialise was run, normal? was #{self.normal?}"
-          on_after_initialize_orig
-        end
-      end
-    end
-
-    after(:each) do
-      class CompositeCriterion
-        def on_after_initialize
-          on_after_initialize_orig
-        end
-      end
-    end
-
-    it "should be normal as it leaves database but not normal after being fully loaded" do
-      @root.reload
-      Spy.playback.should == "before after_initialise was run, normal? was true"
-      @root.should_not be_normal
-    end
-
   end
 
 end
